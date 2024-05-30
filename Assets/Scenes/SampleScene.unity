@@ -1149,7 +1149,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2.04
+  m_Intensity: 1.01
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -1208,6 +1208,7 @@ GameObject:
   - component: {fileID: 643472394}
   - component: {fileID: 643472393}
   - component: {fileID: 643472395}
+  - component: {fileID: 643472396}
   m_Layer: 0
   m_Name: Terminal
   m_TagString: Untagged
@@ -1327,6 +1328,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6293869, y: 0.463521}
   m_EdgeRadius: 0
+--- !u!114 &643472396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643472392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ba29947785fc94eba4b1e80ed43551, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionRadius: 0.86
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  fruitPrice: 10
 --- !u!1 &700037220
 GameObject:
   m_ObjectHideFlags: 0
@@ -1906,9 +1924,11 @@ MonoBehaviour:
   redSeeds: 5
   fertilizer: 10
   redFruit: 0
+  money: 0
   RedSeedText: {fileID: 437583227}
   FertilizerText: {fileID: 1178646894}
   RedFruitText: {fileID: 192174082}
+  MoneyText: {fileID: 1069507366}
 --- !u!1 &856233792
 GameObject:
   m_ObjectHideFlags: 0
